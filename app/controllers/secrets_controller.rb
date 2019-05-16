@@ -4,7 +4,7 @@ class SecretsController < ApplicationController
 
   def show
     unless session.include? :name
-      redirect_to 'sessions#new'
+      redirect_to '/login'
     end
   end
 
